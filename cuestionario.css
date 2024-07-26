@@ -1,0 +1,394 @@
+@charset "utf-8";
+body, html{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f6e8;
+	height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu {
+    background-color: rgba(51, 51, 70, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu-left {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+	font-family: "Raleway", sans-serif;
+     letter-spacing: 1px;
+}
+
+.btn-comprar {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: auto;
+	font-family: "Raleway", sans-serif;
+     letter-spacing: 1px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("imagenes/tired-woman-architect-working-modern-cad-program-overtime-sitting-desk-start-up-office-industrial-female-engineer-studying-prototype-idea-pc-showing-cad-software-device-display.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(20, 10, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text-top {
+    margin-bottom: 10px; /* Ajusta este valor para controlar la separación */
+    font-size: 15px;
+	font-family: "Raleway", sans-serif;
+     letter-spacing: 1px;/* Tamaño del texto */
+}
+
+.hero-text-bottom {
+    font-size: 50px; /* Tamaño del texto "GRATIS" */
+    margin-top: 10px;
+    margin-bottom: 20px; /* Ajusta este valor para controlar la separación */
+}
+
+.hero-content h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+	
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.btn-conseguir {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 170px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.left-section {
+    background-color: #f9f6e8;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+}
+
+.left-section h2 {
+    font-size: 30px;
+    color: #333;
+    text-align: left;
+	font-family: "Quicksand", sans-serif;
+}
+
+.left-section p {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+	font-family: "Quicksand", sans-serif;
+}
+
+.left-section img {
+    margin-top: 25px;
+    display: block;
+    margin-left: 0; 
+}
+
+.right-section {
+    background-color: #fff;
+    padding: 50px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -110px;
+    z-index: 4;
+    margin-left: 40px; /* Aumentar la separación entre las secciones */
+}
+
+.right-section tras {
+    color: #f39c12;
+    font-size: 15px;
+	font-family: "Raleway", sans-serif;
+     letter-spacing: 1px;
+}
+
+.right-section p {
+	font-family: "Quicksand", sans-serif;
+    margin-bottom: 25px;
+    color: #333;
+	font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    margin-bottom: 20px;
+    padding: 9px;
+    border: 1px solid #ccc;
+}
+
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form input[type="tel"]::placeholder {
+    font-weight: bold;
+	font-family: "Quicksand", sans-serif;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+form label {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+	font-family: "Quicksand", sans-serif;
+}
+
+form input[type="checkbox"] + label {
+    border: none; /* Quitar el borde de los checkboxes */
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+form button {
+    padding: 10px 20px;
+	margin-bottom: 20px; 
+    border: none;
+    border-radius: 5px;
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    width: auto; /* Mantener el botón en su tamaño natural */
+    align-self: flex-start;
+    margin-top: 25px;
+	font-family: "Raleway", sans-serif;
+     letter-spacing: 1px;/* Alinear el botón a la izquierda */
+}
+
+form button:hover {
+    background-color: #f39c12; /* Mantener el color original al pasar el cursor */
+}
+
+form input[type="submit"] {
+    background-color: #007BFF; /* Color del botón de enviar */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+form input[type="submit"]:hover {
+    background-color: #007BFF; /* Mantener el mismo color al pasar el cursor */
+}
+.right-section a {
+	font-size: 10px;
+	line-height: 1;
+	color: #333;
+	font-family: "Quicksand", sans-serif;
+	}
+
+.promo-section {
+    background: url('imagenes/bearded-engineer-his-home-office-night-working-gear-mechanism.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.promo-content {
+    background-color: rgba(20, 10, 0, 0.7);
+    padding: 30px;
+    display: inline-block;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    box-sizing: border-box;
+}
+
+.promo-text-top,
+.promo-text-bottom {
+    margin: 30px 0;
+    font-size: 15px;
+	font-family: "Raleway", sans-serif;
+     letter-spacing: 1px;
+}
+
+.promo-price {
+    font-size: 50px;
+    margin: 30px 10px; /* Ajusta este valor para aumentar el tamaño del texto */
+    /* Opcional: para hacer el texto más prominente */
+}
+
+.btn-comprar-promo {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+    width: 170px;
+	font-family: "Raleway", sans-serif;
+     letter-spacing: 1px;
+}
+
+.disclaimer-section {
+    padding: 50px 200px;
+    background-color: #11182a;
+}
+
+.disclaimer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px; /* Espacio entre columnas */
+}
+
+.disclaimer-column {
+    flex: 1;
+}
+
+.disclaimer-column p {
+    font-size: 10px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-info p {
+    font-size: 10px;
+    color: #fff;
+}
+
+.contact-info a {
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.disclaimer-column a {
+    color: #f39c12; 
+    text-decoration: none;
+    font-size: 10px; 
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column; 
+        padding: 0; 
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        margin: 0; 
+    }
+
+    .right-section {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos en una columna */
+        align-items: center; /* Centra horizontalmente los elementos */
+        justify-content: center; /* Centra verticalmente los elementos */
+        padding: 20px; /* Ajusta el padding si es necesario */
+    }
+
+    /* Centrar el contenido de los formularios en .right-section */
+    .right-section form {
+        width: 100%; /* Asegura que el formulario ocupe todo el ancho */
+        max-width: 500px; /* Ajusta el ancho máximo del formulario */
+        margin: 0 auto; /* Centra el formulario horizontalmente */
+    }
+
+    .left-section h2, .right-section tras {
+        font-size: 20px; /* Tamaño más pequeño para encabezados en pantallas pequeñas */
+    }
+@media (max-width: 780px) {
+    
+	 .menu {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-left {
+        flex-direction: row; /* Mantener los botones en una fila horizontal */
+        justify-content: center; /* Centrar los botones horizontalmente */
+        align-items: center; /* Alinear verticalmente los botones */
+        gap: 20px; /* Espacio entre los botones */
+    }
+
+.disclaimer-section {
+        padding: 20px;
+    }
+
+    .disclaimer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+}

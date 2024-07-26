@@ -1,0 +1,723 @@
+@charset "utf-8";
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu {
+    background-color: rgba(51, 51, 70, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu-left {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+}
+
+.btn-comprar {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: auto;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("imagenes/tired-woman-architect-working-modern-cad-program-overtime-sitting-desk-start-up-office-industrial-female-engineer-studying-prototype-idea-pc-showing-cad-software-device-display.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(20, 10, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-text-top {
+    margin-bottom: 10px; /* Ajusta este valor para controlar la separación */
+    font-size: 15px;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+}
+.hero-text-bottom {
+    font-size: 50px; /* Tamaño del texto "GRATIS" */
+    margin-top: 10px;
+    margin-bottom: 20px;/* Ajusta este valor para controlar la separación */
+}
+
+.hero-content h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+	
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+}
+
+.btn-conseguir {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 170px;
+    margin: 0 auto;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+}
+.instructor {
+    display: flex;
+    justify-content: space-between;
+	flex-direction: row;
+    align-items: center;
+    padding: 50px 145px; 
+    z-index: 2;
+    margin-top: -125px;
+    background-color: rgba(0, 10, 0, 0.0); 
+}
+
+.instructor-content {
+    flex: 1;
+    padding: 50px;
+    background-color: #fff;
+    z-index: 3;
+ 
+}
+
+.instructor tras {
+    font-size: 15px;
+    color: #f39c12;
+	font-family: "Raleway", sans-serif;
+	letter-spacing: 1px;
+}
+
+.instructor h3 {
+    font-size: 30px;
+    color: #333;
+	font-family: "Quicksand", sans-serif;
+	
+}
+
+.instructor p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 50px;
+	font-family: "Quicksand", sans-serif;
+}
+
+.instructor-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+	 overflow: hidden;
+	max-width: 100%; /* Asegura que la imagen no se desborde */
+}
+
+.instructor-image img {
+    width: 98%;
+    height: auto;
+    object-fit: cover; /* Mantiene la proporción de la imagen sin deformarla */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features-section {
+    padding: 100px 200px;
+    background-color: #fff5e5;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.features-content {
+    text-align: center;
+}
+
+.features-content tras {
+    color: #f39c12;
+    font-size: 15px;
+    margin-bottom: 10px;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+}
+
+.features-content h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+	color: #333;
+	font-family: "Quicksand", sans-serif;
+}
+
+.features-items {
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.feature-item .feature-number {
+    color: #f39c12;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.feature-item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+	color: #333;
+	font-family: "Quicksand", sans-serif;
+}
+
+.feature-item p {
+    font-size: 14px;
+    line-height: 1.5;
+	color: #333;
+	font-family: "Quicksand", sans-serif;
+}
+.op-section {
+    background: url('imagenes/bearded-engineer-his-home-office-night-working-gear-mechanism.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.op-content {
+	display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
+    background-color: rgba(20, 10, 0, 0.7);
+    padding: 30px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.op-text-top,
+.op-text-bottom {
+    margin: 30px 0;
+    font-size: 15px;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+}
+
+.btn-comprar-op {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+    width: 170px;
+	text-align: center;
+    margin-top: 30px;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+}
+.va-section {
+    padding: 100px 200px;
+    background-color: #ffffff;
+}
+
+.va-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.va-left {	
+    padding-right: 50px;
+	flex: 1;
+	margin-right: 50px;
+}
+
+.va-left tras {
+    color: #f39c12;
+    font-size: 15px;
+    margin-bottom: 10px;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+}
+
+.va-left h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+	color: #333;
+	font-family: "Quicksand", sans-serif;
+}
+
+.va-left p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+	color: #333;
+	font-family: "Quicksand", sans-serif;
+}
+
+.va-left img {
+	margin-top: 20px;
+}
+
+.va-right {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+	margin-right: 50px;
+}
+
+.va-item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+	color: #333;
+	font-family: "Quicksand", sans-serif;
+}
+
+.va-item p {
+    font-size: 14px;
+    line-height: 1.7;
+	color: #333;
+	font-family: "Quicksand", sans-serif;
+}
+.oc-content {
+    padding: 100px 50px; 
+    background-color: #fff5e6;
+}
+
+.oc-content .kj-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.oc-content h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 50px;
+	font-family: "Quicksand", sans-serif;
+}
+
+.content-grid {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px; }
+
+.content-item {
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-item h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+	text-align: left;
+	color: #333;
+		font-family: "Quicksand", sans-serif;
+}
+
+.content-item ul {
+    list-style: none;
+    padding: 0;
+	font-family: "Quicksand", sans-serif;
+	
+}
+
+.content-item ul li {
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 10px;
+	text-align: left;
+	color: #333;
+	font-family: "Quicksand", sans-serif;
+}
+.special-offer {
+    background-color: #f39c12; /* Fondo naranja */
+    color: #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+.special-offer h4,
+.special-offer ul li {
+    color: #fff;
+	font-family: "Quicksand", sans-serif;
+	}
+
+.additional-benefits {
+    padding: 100px 200px; /* Padding ajustado a 200px en los costados */
+    background-color: #f9f9f9;
+}
+
+.additional-benefits .kj-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.additional-benefits h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 50px;
+	font-family: "Quicksand", sans-serif;
+}
+
+.benefit-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.benefit-item {
+    width: 38%;
+    text-align: center;
+	padding: 29px;
+	border: 2px solid #f49c13;
+}
+
+.benefit-item h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+	color: #333;
+	font-family: "Quicksand", sans-serif;
+		
+}
+
+.benefit-image {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 125px;
+}
+
+.benefit-item p {
+    font-size: 14px;
+    line-height: 1.5;
+	color: #333;
+	font-family: "Quicksand", sans-serif;
+}
+
+.horizontal-benefit {
+    text-align: center;
+	background-color: #f49c13;
+	padding: 30px;
+	
+}
+
+.horizontal-benefit h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+	color: #fff;
+	font-family: "Quicksand", sans-serif;
+}
+
+.horizontal-benefit-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+}
+
+.horizontal-image {
+    width: 100%;
+    height: 200px;
+    background-color: #f49c13; /* Fondo gris para el espacio de la imagen */
+    margin-bottom: 70px;
+	justify-content: center;
+}
+
+.horizontal-benefit-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 800px;
+	color: #fff;
+	font-family: "Quicksand", sans-serif;
+}
+.promo-section {
+    background: url('imagenes/bearded-engineer-his-home-office-night-working-gear-mechanism.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.promo-content {
+    background-color: rgba(20, 10, 0, 0.7);
+    padding: 30px;
+    display: inline-block;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    box-sizing: border-box;
+}
+
+.promo-text-top,
+.promo-text-bottom {
+    margin: 30px 0;
+    font-size: 15px;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+}
+.promo-price {
+    font-size: 50px; 
+    margin: 30px 10px;
+}
+.btn-comprar-promo {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+    width: 170px;
+	font-family: "Raleway", sans-serif;
+	 letter-spacing: 1px;
+}
+.disclaimer-section {
+    padding: 50px 200px; 
+    background-color: #11182a;
+}
+
+.disclaimer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px; /* Espacio entre columnas */
+}
+
+.disclaimer-column {
+    flex: 1;
+}
+
+.disclaimer-column p {
+    font-size: 10px;
+    line-height: 1.6;
+    color: #fff;
+	
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-info p {
+    font-size: 10px;
+    color: #fff;
+}
+
+.contact-info a {
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 10px;
+}
+.disclaimer-column a {
+    color: #f39c12; /* Cambia el color del enlace */
+    text-decoration: none; 
+    font-size: 10px; /* Elimina el subrayado */
+}
+
+
+@media (max-width: 768px) {
+	 .menu {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-left {
+        flex-direction: row; /* Mantener los botones en una fila horizontal */
+        justify-content: center; /* Centrar los botones horizontalmente */
+        align-items: center; /* Alinear verticalmente los botones */
+        gap: 20px; /* Espacio entre los botones */
+    }
+
+.disclaimer-section {
+        padding: 20px;
+    }
+
+    .disclaimer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .instructor {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        padding: 20px;
+		margin-top: 0px;
+    }
+
+    .instructor-image {
+		margin-top: 20px;
+        width: 100%; /* La imagen ocupa todo el ancho de la pantalla */
+        height: auto; /* Ajusta la altura de manera proporcional */
+    }
+
+    .instructor-content {
+        width: 100%; /* La sección de contenido ocupa todo el ancho de la pantalla */
+        
+		margin-left: 15px;/* Añade padding para el contenido */
+     }
+	.instructor-content p {
+		font-size: 14px;
+		}
+	.features-section {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        padding: 20px; /* Ajusta el padding si es necesario */
+    }
+
+    .features-items {
+        flex-direction: column; /* Asegura que los items estén en una columna */
+    }
+
+    .feature-item {
+        width: 100%; /* Asegura que cada item ocupe todo el ancho disponible */
+        margin-bottom: -20px; /* Espacio entre los items */
+    }
+.payment-methods img {
+        width: 340px; /* Ajusta el tamaño máximo de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin: 0 auto;
+	align-content: center;
+	}
+	.va-section {
+        padding: 20px; /* Ajusta el padding según sea necesario */
+    }
+
+    .va-content {
+        flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .va-left,
+    .va-right {
+        width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+        padding: 0; /* Elimina el padding en pantallas pequeñas */
+    }
+
+    .va-left {
+        margin-bottom: 20px; /* Añade un margen inferior para separar las secciones */
+    }
+.additional-benefits {
+        padding: 20px;
+	align-content: center;
+	padding-right: 0;/* Ajusta el padding según sea necesario */
+    }
+
+    .benefit-row {
+        flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .benefit-item {
+        width: 100%; /* Asegura que cada item ocupe todo el ancho disponible */
+        margin-bottom: 20px; /* Añade un margen inferior para separar los elementos */
+    }
+
+    .benefit-item img {
+        width: 200px; /* Ajusta el ancho de la imagen para que ocupe todo el espacio disponible */
+        height: auto;
+		align-content: center;/* Mantiene la proporción de la imagen */
+    }
+	 .horizontal-benefit { /* Padding superior e inferior */
+    }
+
+    .horizontal-benefit-content {
+        align-items: center; /* Centra horizontalmente el contenido */
+    }
+
+    .horizontal-image img {
+        width: 100%; /* La imagen ocupa el 100% del contenedor *//* No excede el ancho de la pantalla */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+}
+@media screen and (max-width: 950px) {
+    .additional-benefits .kj-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .benefit-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit-item {
+        margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+        max-width: 100%; /* Asegura que los elementos no excedan el ancho del contenedor */
+    }
+
+    .benefit-image img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .horizontal-benefit-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .horizontal-benefit-content img {
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+}
+	
